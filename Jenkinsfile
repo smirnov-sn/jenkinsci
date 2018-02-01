@@ -18,6 +18,11 @@ pipeline {
             input(message: 'test', id: 'tetrerfrc', ok: 'ok', submitter: 'trtrtrvr', submitterParameter: 'rvfv')
           }
         }
+        stage('i2') {
+          steps {
+            input(message: 'ttttt', id: 'btgbtgbtgbt', ok: '1')
+          }
+        }
       }
     }
   }
