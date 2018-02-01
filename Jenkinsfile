@@ -13,14 +13,25 @@ pipeline {
             echo 't2'
           }
         }
-        stage('input') {
-          steps {
-            input(message: 'test', id: 'tetrerfrc', ok: 'ok', submitter: 'trtrtrvr', submitterParameter: 'rvfv')
-          }
-        }
         stage('i2') {
           steps {
             input(message: 'ttttt', id: 'btgbtgbtgbt', ok: '1')
+          }
+        }
+      }
+    }
+    stage('bgvf') {
+      parallel {
+        stage('bgvf') {
+          steps {
+            input(message: 'start', id: 't6y7u', ok: 'ok')
+            echo 'done'
+          }
+        }
+        stage('deploe prod') {
+          steps {
+            input(message: 'ok?', id: 'dsfgdf', ok: 'ok')
+            echo 'done'
           }
         }
       }
