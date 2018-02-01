@@ -13,6 +13,11 @@ pipeline {
             echo 't2'
           }
         }
+        stage('input') {
+          steps {
+            input(message: 'test', id: 'tetrerfrc', ok: 'ok', submitter: 'trtrtrvr', submitterParameter: 'rvfv')
+          }
+        }
       }
     }
   }
